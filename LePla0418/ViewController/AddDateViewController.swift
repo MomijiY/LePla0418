@@ -39,6 +39,7 @@ extension AddDateViewController {
         switch indexPath.section {
         case 2:
             selectDate()
+            print("ここで下のセルを表示させたいです。")
         default:
             break
         }
