@@ -10,19 +10,34 @@ import UIKit
 
 class ImportantDayTableViewCell: UITableViewCell {
     
+    // MARK: IBOutlet
+    
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var descriptionLabel: UILabel!
     @IBOutlet private weak var dateLabel: UILabel!
+    // MARK: Static properties
+    
+    static let reuseIdentifier = "ImportantDayTableViewCell"
+    static let rowHeight: CGFloat = 100
+    static var nib: UINib {
+        return UINib(nibName: "ImportantDayTableViewCell", bundle: nil)
+    }
 
+    // MARK: Overrides
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
+    // MARK: Setup
+    
+    func setupCell(title: String, content: String, date: String) {
+        titleLabel.text = title
+        descriptionLabel.text = content
+        dateLabel.text = date
+    }
 }

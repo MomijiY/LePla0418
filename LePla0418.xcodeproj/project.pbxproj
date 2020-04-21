@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C0418F537EFED30D8D29449 /* Pods_LePla0418.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E566B6ADC7C9E09108BD167 /* Pods_LePla0418.framework */; };
 		79108429244B0D5100FF78EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79108428244B0D5100FF78EC /* AppDelegate.swift */; };
 		7910842E244B0D5100FF78EC /* LePla0418.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7910842C244B0D5100FF78EC /* LePla0418.xcdatamodeld */; };
 		79108432244B0D5100FF78EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79108431244B0D5100FF78EC /* Assets.xcassets */; };
@@ -15,10 +16,24 @@
 		79108443244B0D5100FF78EC /* LePla0418Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79108442244B0D5100FF78EC /* LePla0418Tests.swift */; };
 		7910844E244B0D5100FF78EC /* LePla0418UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7910844D244B0D5100FF78EC /* LePla0418UITests.swift */; };
 		7910845C244B0D8600FF78EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7910845B244B0D8600FF78EC /* Main.storyboard */; };
-		7910845E244B0D9600FF78EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7910845D244B0D9600FF78EC /* ViewController.swift */; };
+		7910845E244B0D9600FF78EC /* ImDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7910845D244B0D9600FF78EC /* ImDateViewController.swift */; };
 		79108461244B0F0B00FF78EC /* ImportantDayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7910845F244B0F0B00FF78EC /* ImportantDayTableViewCell.swift */; };
 		79108462244B0F0B00FF78EC /* ImportantDayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79108460244B0F0B00FF78EC /* ImportantDayTableViewCell.xib */; };
 		7916F490244B15800008686C /* AddDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7916F48F244B15800008686C /* AddDateViewController.swift */; };
+		7916F494244BC5BC0008686C /* AddDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7916F493244BC5BC0008686C /* AddDate.swift */; };
+		7916F496244BC5CD0008686C /* UserDefaultsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7916F495244BC5CD0008686C /* UserDefaultsModel.swift */; };
+		7916F498244BD70A0008686C /* ImDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7916F497244BD70A0008686C /* ImDetailViewController.swift */; };
+		7916F49B244BFF670008686C /* ImDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7916F49A244BFF670008686C /* ImDetailViewController.storyboard */; };
+		7938094A244C489F00604269 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79380949244C489F00604269 /* HomeViewController.swift */; };
+		7938094C244C601300604269 /* AddPlanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7938094B244C601300604269 /* AddPlanTableViewController.swift */; };
+		79D1C47A244C66480053E649 /* PlanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D1C478244C66480053E649 /* PlanTableViewCell.swift */; };
+		79D1C47B244C66480053E649 /* PlanTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79D1C479244C66480053E649 /* PlanTableViewCell.xib */; };
+		79D1C47D244C67270053E649 /* AddPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D1C47C244C67270053E649 /* AddPlan.swift */; };
+		79D1C47F244C67460053E649 /* PlanUserDefaultsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D1C47E244C67460053E649 /* PlanUserDefaultsModel.swift */; };
+		79D1C484244DB2020053E649 /* PlanDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D1C483244DB2020053E649 /* PlanDetailViewController.swift */; };
+		79D1C486244DB2110053E649 /* PlanDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79D1C485244DB2110053E649 /* PlanDetailViewController.storyboard */; };
+		F8865E7474070C94AA587122 /* Pods_LePla0418Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D93B1A3CEBC2E3B327D3121 /* Pods_LePla0418Tests.framework */; };
+		FBFE8148894A4CBD07663FB4 /* Pods_LePla0418_LePla0418UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 760BDA5FF5CEDF08C5218B47 /* Pods_LePla0418_LePla0418UITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +54,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B366F338D69BEFBE9505458 /* Pods-LePla0418Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LePla0418Tests.debug.xcconfig"; path = "Target Support Files/Pods-LePla0418Tests/Pods-LePla0418Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		2E566B6ADC7C9E09108BD167 /* Pods_LePla0418.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LePla0418.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D93B1A3CEBC2E3B327D3121 /* Pods_LePla0418Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LePla0418Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59A78C7938660D3D23DAEF96 /* Pods-LePla0418-LePla0418UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LePla0418-LePla0418UITests.release.xcconfig"; path = "Target Support Files/Pods-LePla0418-LePla0418UITests/Pods-LePla0418-LePla0418UITests.release.xcconfig"; sourceTree = "<group>"; };
+		62815A08B6109DFC0C345B43 /* Pods-LePla0418-LePla0418UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LePla0418-LePla0418UITests.debug.xcconfig"; path = "Target Support Files/Pods-LePla0418-LePla0418UITests/Pods-LePla0418-LePla0418UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		760BDA5FF5CEDF08C5218B47 /* Pods_LePla0418_LePla0418UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LePla0418_LePla0418UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79108425244B0D5100FF78EC /* LePla0418.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LePla0418.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79108428244B0D5100FF78EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7910842D244B0D5100FF78EC /* LePla0418.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LePla0418.xcdatamodel; sourceTree = "<group>"; };
@@ -53,10 +74,25 @@
 		7910844D244B0D5100FF78EC /* LePla0418UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LePla0418UITests.swift; sourceTree = "<group>"; };
 		7910844F244B0D5100FF78EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7910845B244B0D8600FF78EC /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		7910845D244B0D9600FF78EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7910845D244B0D9600FF78EC /* ImDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImDateViewController.swift; sourceTree = "<group>"; };
 		7910845F244B0F0B00FF78EC /* ImportantDayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportantDayTableViewCell.swift; sourceTree = "<group>"; };
 		79108460244B0F0B00FF78EC /* ImportantDayTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImportantDayTableViewCell.xib; sourceTree = "<group>"; };
 		7916F48F244B15800008686C /* AddDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDateViewController.swift; sourceTree = "<group>"; };
+		7916F493244BC5BC0008686C /* AddDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDate.swift; sourceTree = "<group>"; };
+		7916F495244BC5CD0008686C /* UserDefaultsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsModel.swift; sourceTree = "<group>"; };
+		7916F497244BD70A0008686C /* ImDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImDetailViewController.swift; sourceTree = "<group>"; };
+		7916F49A244BFF670008686C /* ImDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImDetailViewController.storyboard; sourceTree = "<group>"; };
+		79380949244C489F00604269 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7938094B244C601300604269 /* AddPlanTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlanTableViewController.swift; sourceTree = "<group>"; };
+		79D1C478244C66480053E649 /* PlanTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanTableViewCell.swift; sourceTree = "<group>"; };
+		79D1C479244C66480053E649 /* PlanTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanTableViewCell.xib; sourceTree = "<group>"; };
+		79D1C47C244C67270053E649 /* AddPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlan.swift; sourceTree = "<group>"; };
+		79D1C47E244C67460053E649 /* PlanUserDefaultsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanUserDefaultsModel.swift; sourceTree = "<group>"; };
+		79D1C483244DB2020053E649 /* PlanDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanDetailViewController.swift; sourceTree = "<group>"; };
+		79D1C485244DB2110053E649 /* PlanDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlanDetailViewController.storyboard; sourceTree = "<group>"; };
+		AE285874D45D3557100CD793 /* Pods-LePla0418Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LePla0418Tests.release.xcconfig"; path = "Target Support Files/Pods-LePla0418Tests/Pods-LePla0418Tests.release.xcconfig"; sourceTree = "<group>"; };
+		B108028BC52ACF01C8A118AA /* Pods-LePla0418.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LePla0418.release.xcconfig"; path = "Target Support Files/Pods-LePla0418/Pods-LePla0418.release.xcconfig"; sourceTree = "<group>"; };
+		BC431E0FF9604DE709194578 /* Pods-LePla0418.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LePla0418.debug.xcconfig"; path = "Target Support Files/Pods-LePla0418/Pods-LePla0418.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C0418F537EFED30D8D29449 /* Pods_LePla0418.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8865E7474070C94AA587122 /* Pods_LePla0418Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +116,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBFE8148894A4CBD07663FB4 /* Pods_LePla0418_LePla0418UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43A6E06F92F3C301F69B9D95 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC431E0FF9604DE709194578 /* Pods-LePla0418.debug.xcconfig */,
+				B108028BC52ACF01C8A118AA /* Pods-LePla0418.release.xcconfig */,
+				62815A08B6109DFC0C345B43 /* Pods-LePla0418-LePla0418UITests.debug.xcconfig */,
+				59A78C7938660D3D23DAEF96 /* Pods-LePla0418-LePla0418UITests.release.xcconfig */,
+				0B366F338D69BEFBE9505458 /* Pods-LePla0418Tests.debug.xcconfig */,
+				AE285874D45D3557100CD793 /* Pods-LePla0418Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6CFD047CB746B3BF07BB7B6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E566B6ADC7C9E09108BD167 /* Pods_LePla0418.framework */,
+				760BDA5FF5CEDF08C5218B47 /* Pods_LePla0418_LePla0418UITests.framework */,
+				3D93B1A3CEBC2E3B327D3121 /* Pods_LePla0418Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7910841C244B0D5100FF78EC = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +153,8 @@
 				79108441244B0D5100FF78EC /* LePla0418Tests */,
 				7910844C244B0D5100FF78EC /* LePla0418UITests */,
 				79108426244B0D5100FF78EC /* Products */,
+				43A6E06F92F3C301F69B9D95 /* Pods */,
+				6CFD047CB746B3BF07BB7B6A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				79108428244B0D5100FF78EC /* AppDelegate.swift */,
+				7916F491244BC5990008686C /* Models */,
 				79108463244B0F0E00FF78EC /* Cell */,
 				79108464244B0F1E00FF78EC /* ViewController */,
 				79108431244B0D5100FF78EC /* Assets.xcassets */,
@@ -151,6 +216,8 @@
 			children = (
 				7910845F244B0F0B00FF78EC /* ImportantDayTableViewCell.swift */,
 				79108460244B0F0B00FF78EC /* ImportantDayTableViewCell.xib */,
+				79D1C478244C66480053E649 /* PlanTableViewCell.swift */,
+				79D1C479244C66480053E649 /* PlanTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -158,10 +225,67 @@
 		79108464244B0F1E00FF78EC /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				7910845D244B0D9600FF78EC /* ViewController.swift */,
-				7916F48F244B15800008686C /* AddDateViewController.swift */,
+				79380948244C489300604269 /* Home */,
+				79380947244C488400604269 /* ImportantDay */,
+				79D1C482244DB1E80053E649 /* PlanDetail */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		7916F491244BC5990008686C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7916F493244BC5BC0008686C /* AddDate.swift */,
+				79D1C47C244C67270053E649 /* AddPlan.swift */,
+				7916F492244BC5A10008686C /* UserDefaultsModel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7916F492244BC5A10008686C /* UserDefaultsModel */ = {
+			isa = PBXGroup;
+			children = (
+				7916F495244BC5CD0008686C /* UserDefaultsModel.swift */,
+				79D1C47E244C67460053E649 /* PlanUserDefaultsModel.swift */,
+			);
+			path = UserDefaultsModel;
+			sourceTree = "<group>";
+		};
+		7916F499244BFF4B0008686C /* AddDateDetail */ = {
+			isa = PBXGroup;
+			children = (
+				7916F497244BD70A0008686C /* ImDetailViewController.swift */,
+				7916F49A244BFF670008686C /* ImDetailViewController.storyboard */,
+			);
+			path = AddDateDetail;
+			sourceTree = "<group>";
+		};
+		79380947244C488400604269 /* ImportantDay */ = {
+			isa = PBXGroup;
+			children = (
+				7910845D244B0D9600FF78EC /* ImDateViewController.swift */,
+				7916F48F244B15800008686C /* AddDateViewController.swift */,
+				7916F499244BFF4B0008686C /* AddDateDetail */,
+			);
+			path = ImportantDay;
+			sourceTree = "<group>";
+		};
+		79380948244C489300604269 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				79380949244C489F00604269 /* HomeViewController.swift */,
+				7938094B244C601300604269 /* AddPlanTableViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		79D1C482244DB1E80053E649 /* PlanDetail */ = {
+			isa = PBXGroup;
+			children = (
+				79D1C483244DB2020053E649 /* PlanDetailViewController.swift */,
+				79D1C485244DB2110053E649 /* PlanDetailViewController.storyboard */,
+			);
+			path = PlanDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,9 +295,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79108452244B0D5200FF78EC /* Build configuration list for PBXNativeTarget "LePla0418" */;
 			buildPhases = (
+				2A4ECFADBF8ACBC9102BE59E /* [CP] Check Pods Manifest.lock */,
 				79108421244B0D5100FF78EC /* Sources */,
 				79108422244B0D5100FF78EC /* Frameworks */,
 				79108423244B0D5100FF78EC /* Resources */,
+				67F7186C6E3C5EEA96B46BB7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -188,6 +314,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79108455244B0D5200FF78EC /* Build configuration list for PBXNativeTarget "LePla0418Tests" */;
 			buildPhases = (
+				00963F2A57C53372C898C477 /* [CP] Check Pods Manifest.lock */,
 				7910843A244B0D5100FF78EC /* Sources */,
 				7910843B244B0D5100FF78EC /* Frameworks */,
 				7910843C244B0D5100FF78EC /* Resources */,
@@ -206,9 +333,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79108458244B0D5200FF78EC /* Build configuration list for PBXNativeTarget "LePla0418UITests" */;
 			buildPhases = (
+				FE9ADCDF7D2E9C7389691521 /* [CP] Check Pods Manifest.lock */,
 				79108445244B0D5100FF78EC /* Sources */,
 				79108446244B0D5100FF78EC /* Frameworks */,
 				79108447244B0D5100FF78EC /* Resources */,
+				35B6842F878405E1200F030D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -268,11 +397,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79D1C47B244C66480053E649 /* PlanTableViewCell.xib in Resources */,
+				7916F49B244BFF670008686C /* ImDetailViewController.storyboard in Resources */,
 				79108438244B0D5100FF78EC /* LaunchScreen.storyboard in Resources */,
 				79108435244B0D5100FF78EC /* Preview Assets.xcassets in Resources */,
 				79108462244B0F0B00FF78EC /* ImportantDayTableViewCell.xib in Resources */,
 				79108432244B0D5100FF78EC /* Assets.xcassets in Resources */,
 				7910845C244B0D8600FF78EC /* Main.storyboard in Resources */,
+				79D1C486244DB2110053E649 /* PlanDetailViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,16 +424,128 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00963F2A57C53372C898C477 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LePla0418Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A4ECFADBF8ACBC9102BE59E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LePla0418-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		35B6842F878405E1200F030D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LePla0418-LePla0418UITests/Pods-LePla0418-LePla0418UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LePla0418-LePla0418UITests/Pods-LePla0418-LePla0418UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LePla0418-LePla0418UITests/Pods-LePla0418-LePla0418UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67F7186C6E3C5EEA96B46BB7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LePla0418/Pods-LePla0418-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LePla0418/Pods-LePla0418-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LePla0418/Pods-LePla0418-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE9ADCDF7D2E9C7389691521 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LePla0418-LePla0418UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		79108421244B0D5100FF78EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7910845E244B0D9600FF78EC /* ViewController.swift in Sources */,
+				7916F496244BC5CD0008686C /* UserDefaultsModel.swift in Sources */,
+				7910845E244B0D9600FF78EC /* ImDateViewController.swift in Sources */,
 				7916F490244B15800008686C /* AddDateViewController.swift in Sources */,
+				7938094C244C601300604269 /* AddPlanTableViewController.swift in Sources */,
 				79108461244B0F0B00FF78EC /* ImportantDayTableViewCell.swift in Sources */,
+				7916F494244BC5BC0008686C /* AddDate.swift in Sources */,
+				79D1C47F244C67460053E649 /* PlanUserDefaultsModel.swift in Sources */,
+				7938094A244C489F00604269 /* HomeViewController.swift in Sources */,
 				7910842E244B0D5100FF78EC /* LePla0418.xcdatamodeld in Sources */,
+				79D1C47D244C67270053E649 /* AddPlan.swift in Sources */,
 				79108429244B0D5100FF78EC /* AppDelegate.swift in Sources */,
+				7916F498244BD70A0008686C /* ImDetailViewController.swift in Sources */,
+				79D1C484244DB2020053E649 /* PlanDetailViewController.swift in Sources */,
+				79D1C47A244C66480053E649 /* PlanTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +708,7 @@
 		};
 		79108453244B0D5200FF78EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC431E0FF9604DE709194578 /* Pods-LePla0418.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -483,6 +728,7 @@
 		};
 		79108454244B0D5200FF78EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B108028BC52ACF01C8A118AA /* Pods-LePla0418.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -502,6 +748,7 @@
 		};
 		79108456244B0D5200FF78EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B366F338D69BEFBE9505458 /* Pods-LePla0418Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -523,6 +770,7 @@
 		};
 		79108457244B0D5200FF78EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE285874D45D3557100CD793 /* Pods-LePla0418Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -544,6 +792,7 @@
 		};
 		79108459244B0D5200FF78EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62815A08B6109DFC0C345B43 /* Pods-LePla0418-LePla0418UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -563,6 +812,7 @@
 		};
 		7910845A244B0D5200FF78EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59A78C7938660D3D23DAEF96 /* Pods-LePla0418-LePla0418UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
