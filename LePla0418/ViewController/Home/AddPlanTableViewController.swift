@@ -72,19 +72,32 @@ extension AddPlanTableViewController: UITextFieldDelegate, UITextViewDelegate  {
 
 extension AddPlanTableViewController {
     func savePlan() {
-        guard let timeOne = timeOneTextField.text,
-            let timeTwo = timeTwoTextField.text,
-            let subject = subjectTextField.text,
-            let content = contentTextView.text else { return }
+//        guard let timeOne = timeOneTextField.text,
+//            let timeTwo = timeTwoTextField.text,
+//            let subject = subjectTextField.text,
+//            let content = contentTextView.text else { return }
+//
+//        let plan = AddPlan(timeOne: timeOne, timeTwo: timeTwo, subject: subject, content: content)
+//        if let storedPlan = model.loadMemos() {
+//            var newPlans = storedPlan
+//            newPlans.append(plan)
+//            model.saveMemos(newPlans)
+//        } else {
+//            model.saveMemos([plan])
+//        }
+//        navigationController?.popViewController(animated: true)
         
-        let plan = AddPlan(timeOne: timeOne, timeTwo: timeTwo, subject: subject, content: content)
-        if let storedPlan = model.loadMemos() {
-            var newPlans = storedPlan
-            newPlans.append(plan)
-            model.saveMemos(newPlans)
-        } else {
-            model.saveMemos([plan])
+        let realm = try! Realm()
+        
+        try! realm.write{
+            let events = [Event(value: ["time1": timeOneTextField.text,
+                                        "time2": timeTwoTextField.text,
+                                        "subject": subjectTextField.text,
+                                        "content": contentTextView.text])]
+            realm.add(events)
+            print("書き込み中")
         }
+        print("書き込み完了")
         navigationController?.popViewController(animated: true)
     }
 }

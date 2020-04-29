@@ -15,14 +15,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nVB-t6-xie">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nVB-t6-xie">
                                 <rect key="frame" x="20" y="266" width="374" height="374"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PxV-Oz-mFA">
-                                        <rect key="frame" x="8" y="74" width="358" height="68"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="PxV-Oz-mFA" secondAttribute="height" multiplier="179:34" id="NH0-dI-xA2"/>
-                                        </constraints>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PxV-Oz-mFA">
+                                        <rect key="frame" x="8" y="87" width="358" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <attributedString key="attributedText">
                                             <fragment content="タイトル">
                                                 <attributes>
@@ -34,11 +33,9 @@
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87B-kE-t8B">
-                                        <rect key="frame" x="8" y="150" width="358" height="74"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="87B-kE-t8B" secondAttribute="height" multiplier="179:37" id="huj-dF-fOE"/>
-                                        </constraints>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87B-kE-t8B">
+                                        <rect key="frame" x="8" y="135" width="358" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <attributedString key="attributedText">
                                             <fragment content="後０００日">
                                                 <attributes>
@@ -50,8 +47,9 @@
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbq-AX-kWc">
-                                        <rect key="frame" x="8" y="232" width="358" height="70"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbq-AX-kWc">
+                                        <rect key="frame" x="8" y="253" width="358" height="59"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <attributedString key="attributedText">
                                             <fragment content="意気込み">
                                                 <attributes>
@@ -66,28 +64,9 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="nVB-t6-xie" secondAttribute="height" multiplier="1:1" id="57J-P3-bEi"/>
-                                    <constraint firstItem="PxV-Oz-mFA" firstAttribute="leading" secondItem="nVB-t6-xie" secondAttribute="leading" constant="8" id="5bY-Nr-4HF"/>
-                                    <constraint firstItem="vbq-AX-kWc" firstAttribute="leading" secondItem="nVB-t6-xie" secondAttribute="leading" constant="8" id="7gA-FT-HNa"/>
-                                    <constraint firstAttribute="trailing" secondItem="vbq-AX-kWc" secondAttribute="trailing" constant="8" id="9tm-mr-AMh"/>
-                                    <constraint firstItem="87B-kE-t8B" firstAttribute="top" secondItem="PxV-Oz-mFA" secondAttribute="bottom" constant="8" id="AG9-6Y-9V9"/>
-                                    <constraint firstAttribute="trailing" secondItem="PxV-Oz-mFA" secondAttribute="trailing" constant="8" id="JkV-xK-S33"/>
-                                    <constraint firstItem="vbq-AX-kWc" firstAttribute="top" secondItem="87B-kE-t8B" secondAttribute="bottom" constant="8" id="ROY-mG-IOI"/>
-                                    <constraint firstAttribute="bottom" secondItem="vbq-AX-kWc" secondAttribute="bottom" constant="72" id="g6V-so-tqX"/>
-                                    <constraint firstAttribute="trailing" secondItem="87B-kE-t8B" secondAttribute="trailing" constant="8" id="gKa-SJ-0gC"/>
-                                    <constraint firstItem="PxV-Oz-mFA" firstAttribute="top" secondItem="nVB-t6-xie" secondAttribute="top" constant="74" id="nJ1-7T-UfS"/>
-                                    <constraint firstItem="87B-kE-t8B" firstAttribute="leading" secondItem="nVB-t6-xie" secondAttribute="leading" constant="8" id="r7m-DG-7L2"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="nVB-t6-xie" firstAttribute="leading" secondItem="exH-cw-9NH" secondAttribute="leading" constant="20" id="NEn-5e-D66"/>
-                            <constraint firstItem="nVB-t6-xie" firstAttribute="top" secondItem="exH-cw-9NH" secondAttribute="top" constant="222" id="ZQ6-O4-jwU"/>
-                            <constraint firstItem="exH-cw-9NH" firstAttribute="bottom" secondItem="nVB-t6-xie" secondAttribute="bottom" constant="222" id="j4D-ah-0ki"/>
-                            <constraint firstItem="exH-cw-9NH" firstAttribute="trailing" secondItem="nVB-t6-xie" secondAttribute="trailing" constant="20" id="kUT-En-Pmo"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="exH-cw-9NH"/>
                     </view>
                     <connections>

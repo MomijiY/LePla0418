@@ -11,9 +11,11 @@ import UIKit
 final class ImDateViewController: UIViewController {
     // MARK: IBOutlet
     @IBOutlet weak var tableView: UITableView!
-    
+    @IBOutlet weak var alertLabel: UILabel!
     // MARK: Properties
     
+    var topin = Int()
+    private var adddate: AddDate!
     private let model = UserDefaultsModel()
     private var dataSource: [AddDate] = [AddDate]() {
         didSet {
@@ -70,6 +72,11 @@ extension ImDateViewController {
 extension ImDateViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if dataSource.count == 0 {
+            alertLabel.isHidden = false
+        } else {
+            alertLabel.isHidden = true
+        }
         return dataSource.count
     }
     
@@ -107,6 +114,17 @@ extension ImDateViewController: UITableViewDataSource, UITableViewDelegate {
 
             self.tableView.reloadData()
         }
+    }
+    
+    //スワイプでトップに固定する関数
+    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let action = UIContextualAction(style: .normal, title: "トップに固定", handler: { (ctxAction, view, completionHandler) in
+            print("スワイプされました。")
+            //スワイプされたら元に戻る
+            completionHandler(true)
+        })
+        action.backgroundColor = .systemTeal
+        return UISwipeActionsConfiguration(actions: [action])
     }
     
 }

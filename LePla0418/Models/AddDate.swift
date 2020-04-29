@@ -9,7 +9,8 @@
 import Foundation
 
 struct AddDate: Codable {
-    let title: String
-    let content: String
-    let date: String
+    var title: String
+    var content: String
+    var date: String
+    var pin: Bool
 }

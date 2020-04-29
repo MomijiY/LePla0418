@@ -15,6 +15,7 @@ class ImportantDayTableViewCell: UITableViewCell {
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var descriptionLabel: UILabel!
     @IBOutlet private weak var dateLabel: UILabel!
+    @IBOutlet private weak var pinImage: UIImageView!
     // MARK: Static properties
     
     static let reuseIdentifier = "ImportantDayTableViewCell"
@@ -39,5 +40,13 @@ class ImportantDayTableViewCell: UITableViewCell {
         titleLabel.text = title
         descriptionLabel.text = content
         dateLabel.text = date
+    }
+    
+    func setupPin(pin: String) {
+        if pin == "notHidden" {
+            pinImage.isHidden = false
+        } else {
+            pinImage.isHidden = true
+        }
     }
 }

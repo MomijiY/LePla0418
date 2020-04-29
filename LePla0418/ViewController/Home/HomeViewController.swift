@@ -15,6 +15,7 @@ class HomeViewController: UIViewController, FSCalendarDelegate,FSCalendarDataSou
     
     @IBOutlet weak var calendar: FSCalendar!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var alertLabel: UILabel!
     
     private let model = PlanUserDefaultsModel()
     private var dataSource: [AddPlan] = [AddPlan]() {
@@ -35,6 +36,9 @@ class HomeViewController: UIViewController, FSCalendarDelegate,FSCalendarDataSou
     override func viewWillAppear(_ animated: Bool) {
         loadMemos()
     }
+}
+
+extension HomeViewController {
     func calendar(_ calendar: FSCalendar, boundingRectWillChange bounds: CGRect, animated: Bool) {
             self.view.layoutIfNeeded()
     }
@@ -88,7 +92,32 @@ class HomeViewController: UIViewController, FSCalendarDelegate,FSCalendarDataSou
         return nil
     }
     
-    
+    func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
+        let tmpDate = Calendar(identifier: .gregorian)
+        let year = tmpDate.component(.year, from: date)
+        let month = tmpDate.component(.month, from: date)
+        let day = tmpDate.component(.day, from: date)
+        let m = String(format: "%02d", month)
+        let d = String(format: "%02d", day)
+        
+        let da = "\(year)/\(m)/\(d)"
+        
+        let realm = try! Realm()
+        var results = realm.objects(Event.self)
+        
+        results = results.filter("date = '\(da)'")
+        print(results)
+        
+        for ev in results {
+            //Value of type 'Event' has no member 'date'
+            if ev.date == date {
+                //この後をどう書けばいいのか分からない
+                let cell = tableView.dequeueReusableCell(withIdentifier: PlanTableViewCell.reuseIdentifier) as! PlanTableViewCell
+                cell.setUpPlanCell(timeOne: <#T##String#>, timeTwo: <#T##String#>, subject: <#T##String#>, content: <#T##String#>)
+                tableView.reloadData()
+            }
+        }
+    }
 }
 
 extension HomeViewController {
@@ -109,6 +138,11 @@ extension HomeViewController {
 extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if dataSource.count == 0 {
+            alertLabel.isHidden = false
+        } else {
+            alertLabel.isHidden = true
+        }
         return dataSource.count
     }
     

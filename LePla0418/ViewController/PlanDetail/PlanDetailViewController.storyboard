@@ -25,39 +25,41 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htI-IE-BuM">
-                                                    <rect key="frame" x="226" y="0.0" width="168" height="44"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="~" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QV0-gB-zk8">
-                                                    <rect key="frame" x="185" y="-0.5" width="41" height="43"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnF-ni-gTP">
-                                                    <rect key="frame" x="20" y="0.0" width="168" height="44"/>
+                                                    <rect key="frame" x="206" y="0.0" width="188" height="43.5"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" secondItem="rnF-ni-gTP" secondAttribute="height" multiplier="42:11" id="QuC-Zq-bl8"/>
+                                                        <constraint firstAttribute="width" secondItem="htI-IE-BuM" secondAttribute="height" multiplier="95:22" id="sUW-ds-CAy"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnF-ni-gTP">
+                                                    <rect key="frame" x="20" y="0.0" width="157" height="43.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="rnF-ni-gTP" secondAttribute="height" multiplier="159:44" id="FC9-0f-Kdp"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="~" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QV0-gB-zk8">
+                                                    <rect key="frame" x="185" y="0.0" width="13" height="43.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="QV0-gB-zk8" secondAttribute="bottom" constant="1" id="ALZ-Fu-19K"/>
-                                                <constraint firstItem="QV0-gB-zk8" firstAttribute="top" secondItem="uIH-re-jen" secondAttribute="top" constant="-0.5" id="F4f-6t-CCx"/>
-                                                <constraint firstItem="rnF-ni-gTP" firstAttribute="leading" secondItem="uIH-re-jen" secondAttribute="leading" constant="20" id="RCm-Y0-c7Y"/>
-                                                <constraint firstItem="QV0-gB-zk8" firstAttribute="leading" secondItem="uIH-re-jen" secondAttribute="leading" constant="185" id="V7u-JG-3Yh"/>
-                                                <constraint firstItem="htI-IE-BuM" firstAttribute="leading" secondItem="QV0-gB-zk8" secondAttribute="trailing" id="WG2-tD-RBf"/>
-                                                <constraint firstItem="htI-IE-BuM" firstAttribute="top" secondItem="uIH-re-jen" secondAttribute="top" id="WVg-dZ-fu9"/>
-                                                <constraint firstAttribute="bottom" secondItem="htI-IE-BuM" secondAttribute="bottom" constant="-0.5" id="ZuX-BS-XL7"/>
-                                                <constraint firstAttribute="bottom" secondItem="rnF-ni-gTP" secondAttribute="bottom" constant="-0.5" id="dXY-Uy-hdS"/>
-                                                <constraint firstItem="htI-IE-BuM" firstAttribute="leading" secondItem="rnF-ni-gTP" secondAttribute="trailing" constant="38" id="dfr-iY-QDL"/>
-                                                <constraint firstAttribute="trailing" secondItem="htI-IE-BuM" secondAttribute="trailing" constant="20" id="fPQ-fM-iS5"/>
-                                                <constraint firstItem="rnF-ni-gTP" firstAttribute="top" secondItem="uIH-re-jen" secondAttribute="top" id="j69-z3-lsr"/>
+                                                <constraint firstItem="rnF-ni-gTP" firstAttribute="leading" secondItem="uIH-re-jen" secondAttribute="leading" constant="20" id="16t-TP-a9B"/>
+                                                <constraint firstItem="htI-IE-BuM" firstAttribute="top" secondItem="uIH-re-jen" secondAttribute="top" id="2eh-CI-qdm"/>
+                                                <constraint firstAttribute="bottom" secondItem="htI-IE-BuM" secondAttribute="bottom" id="5uH-Fq-T8p"/>
+                                                <constraint firstAttribute="bottom" secondItem="QV0-gB-zk8" secondAttribute="bottom" id="7eG-Qt-P4x"/>
+                                                <constraint firstItem="QV0-gB-zk8" firstAttribute="top" secondItem="uIH-re-jen" secondAttribute="top" id="AUg-kE-E9q"/>
+                                                <constraint firstAttribute="trailing" secondItem="htI-IE-BuM" secondAttribute="trailing" constant="20" id="HKt-IP-gdh"/>
+                                                <constraint firstItem="QV0-gB-zk8" firstAttribute="leading" secondItem="rnF-ni-gTP" secondAttribute="trailing" constant="8" id="YZv-Lu-abq"/>
+                                                <constraint firstItem="rnF-ni-gTP" firstAttribute="top" secondItem="uIH-re-jen" secondAttribute="top" id="fKy-v5-Hmu"/>
+                                                <constraint firstItem="htI-IE-BuM" firstAttribute="leading" secondItem="QV0-gB-zk8" secondAttribute="trailing" constant="8" id="qlV-2z-Qfb"/>
+                                                <constraint firstAttribute="bottom" secondItem="rnF-ni-gTP" secondAttribute="bottom" id="u13-36-7Ji"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>

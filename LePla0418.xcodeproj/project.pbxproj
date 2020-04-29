@@ -26,6 +26,7 @@
 		7916F49B244BFF670008686C /* ImDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7916F49A244BFF670008686C /* ImDetailViewController.storyboard */; };
 		7938094A244C489F00604269 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79380949244C489F00604269 /* HomeViewController.swift */; };
 		7938094C244C601300604269 /* AddPlanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7938094B244C601300604269 /* AddPlanTableViewController.swift */; };
+		7963A9FA2459019A000EDA00 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7963A9F92459019A000EDA00 /* Event.swift */; };
 		79D1C47A244C66480053E649 /* PlanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D1C478244C66480053E649 /* PlanTableViewCell.swift */; };
 		79D1C47B244C66480053E649 /* PlanTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79D1C479244C66480053E649 /* PlanTableViewCell.xib */; };
 		79D1C47D244C67270053E649 /* AddPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D1C47C244C67270053E649 /* AddPlan.swift */; };
@@ -84,6 +85,7 @@
 		7916F49A244BFF670008686C /* ImDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImDetailViewController.storyboard; sourceTree = "<group>"; };
 		79380949244C489F00604269 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7938094B244C601300604269 /* AddPlanTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlanTableViewController.swift; sourceTree = "<group>"; };
+		7963A9F92459019A000EDA00 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		79D1C478244C66480053E649 /* PlanTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanTableViewCell.swift; sourceTree = "<group>"; };
 		79D1C479244C66480053E649 /* PlanTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanTableViewCell.xib; sourceTree = "<group>"; };
 		79D1C47C244C67270053E649 /* AddPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlan.swift; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 			children = (
 				7916F493244BC5BC0008686C /* AddDate.swift */,
 				79D1C47C244C67270053E649 /* AddPlan.swift */,
+				7963A9F92459019A000EDA00 /* Event.swift */,
 				7916F492244BC5A10008686C /* UserDefaultsModel */,
 			);
 			path = Models;
@@ -536,6 +539,7 @@
 				7910845E244B0D9600FF78EC /* ImDateViewController.swift in Sources */,
 				7916F490244B15800008686C /* AddDateViewController.swift in Sources */,
 				7938094C244C601300604269 /* AddPlanTableViewController.swift in Sources */,
+				7963A9FA2459019A000EDA00 /* Event.swift in Sources */,
 				79108461244B0F0B00FF78EC /* ImportantDayTableViewCell.swift in Sources */,
 				7916F494244BC5BC0008686C /* AddDate.swift in Sources */,
 				79D1C47F244C67460053E649 /* PlanUserDefaultsModel.swift in Sources */,

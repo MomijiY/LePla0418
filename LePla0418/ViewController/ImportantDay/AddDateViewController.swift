@@ -15,7 +15,7 @@ class AddDateViewController: UITableViewController, UITextFieldDelegate {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var top: UISwitch!
-    
+    var pin = true
     var isPicker = false
     
     private let model = UserDefaultsModel()
@@ -34,9 +34,10 @@ class AddDateViewController: UITableViewController, UITextFieldDelegate {
     @IBAction func topSwitchTapped(_ sender: UISwitch) {
         if sender.isOn {
             //トップに固定する時
-            //トップに固定させるというフラグを持たせる？
+            self.pin = true
         } else {
             // トップに固定しない時
+            self.pin = false
         }
     }
     
@@ -111,18 +112,39 @@ extension AddDateViewController {
     }
     
     func saveImDate() {
-        guard let title = titleTextField.text,
-            let description = descriptionTextField.text,
-            let date = dateLabel.text else { return }
+        let alert = UIAlertController(title: "タイトルを設定してください。", message: "", preferredStyle: .alert)
+        let okbutton = UIAlertAction(title: "OK", style: .default, handler: nil)
         
-        let importantDay = AddDate(title: title, content: description, date: date)
-        if let storedDay = model.loadMemos() {
-            var newDates = storedDay
-            newDates.append(importantDay)
-            model.saveMemos(newDates)
+        alert.addAction(okbutton)
+        
+        if titleTextField.text == "" {
+            present(alert, animated: true, completion: nil)
         } else {
-            model.saveMemos([importantDay])
+            guard let title = titleTextField.text,
+                let description = descriptionTextField.text,
+                let date = dateLabel.text else { return }
+            let importantDay = AddDate(title: title, content: description, date: date, pin: self.pin)
+            if let storedDay = model.loadMemos() {
+                var newDates = storedDay
+                for (i, data) in newDates.enumerated() {
+                    print("kokokko")
+                    if data.pin == false && self.pin == true {
+                        newDates.insert(importantDay, at: i)
+                        break;
+                    }
+                }
+                print("ko: \(newDates.count)")
+                if newDates.count == 0 || self.pin == false {
+                    newDates.append(importantDay)
+                }
+                //
+                model.saveMemos(newDates)
+            } else {
+                print("koko")
+                model.saveMemos([importantDay])
+            }
+            navigationController?.popViewController(animated: true)
+
         }
-        navigationController?.popViewController(animated: true)
     }
 }
