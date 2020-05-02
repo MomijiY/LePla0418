@@ -129,6 +129,7 @@ extension AddDateViewController {
                 for (i, data) in newDates.enumerated() {
                     print("kokokko")
                     if data.pin == false && self.pin == true {
+                        UserDefaults.standard.set(pin, forKey: "Userpin")
                         newDates.insert(importantDay, at: i)
                         break;
                     }

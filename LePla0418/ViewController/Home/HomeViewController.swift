@@ -17,6 +17,7 @@ class HomeViewController: UIViewController, FSCalendarDelegate,FSCalendarDataSou
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var alertLabel: UILabel!
     
+    var time1: String!
     private let model = PlanUserDefaultsModel()
     private var dataSource: [AddPlan] = [AddPlan]() {
         didSet {
@@ -82,11 +83,21 @@ extension HomeViewController {
 
         //土日の判定を行う（土曜日は青色、日曜日は赤色で表示する）
         let weekday = self.getWeekIdx(date)
+        let comp = Calendar.Component.weekday
+        let todayweekday = NSCalendar.current.component(comp, from: NSDate() as Date)
         if weekday == 1 {   //日曜日
-            return UIColor.red
+            if todayweekday == 1 {
+                return UIColor.white
+            } else {
+                return UIColor.red
+            }
         }
          if weekday == 7 {  //土曜日
-            return UIColor.blue
+            if todayweekday == 7 {
+                return UIColor.white
+            } else {
+                return UIColor.blue
+            }
         }
 
         return nil
@@ -110,7 +121,7 @@ extension HomeViewController {
         
         for ev in results {
             //Value of type 'Event' has no member 'date'
-            if ev.date == date {
+            if ev.time1 == time1 {
                 //この後をどう書けばいいのか分からない
                 let cell = tableView.dequeueReusableCell(withIdentifier: PlanTableViewCell.reuseIdentifier) as! PlanTableViewCell
                 cell.setUpPlanCell(timeOne: <#T##String#>, timeTwo: <#T##String#>, subject: <#T##String#>, content: <#T##String#>)

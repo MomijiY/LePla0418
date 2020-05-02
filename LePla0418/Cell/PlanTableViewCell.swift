@@ -14,6 +14,7 @@ class PlanTableViewCell: UITableViewCell {
     @IBOutlet private weak var timeTwoLabel: UILabel!
     @IBOutlet private weak var subjectLabel: UILabel!
     @IBOutlet private weak var contentLabel: UILabel!
+    @IBOutlet private weak var pinImage: UIImageView!
     
     // MARK: Static properties
     

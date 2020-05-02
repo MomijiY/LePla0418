@@ -8,13 +8,15 @@
 
 import UIKit
 
+var toPin = String()
+
 final class ImDateViewController: UIViewController {
     // MARK: IBOutlet
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var alertLabel: UILabel!
     // MARK: Properties
     
-    var topin = Int()
+    var pin = true
     private var adddate: AddDate!
     private let model = UserDefaultsModel()
     private var dataSource: [AddDate] = [AddDate]() {
@@ -87,6 +89,11 @@ extension ImDateViewController: UITableViewDataSource, UITableViewDelegate {
         cell.selectedBackgroundView = selectionview
         let memo = dataSource[indexPath.row]
         cell.setupCell(title: memo.title, content: memo.content, date: memo.date)
+        if UserDefaults.standard.bool(forKey: "Userpin") {
+            cell.setUpPin(pin: "true")
+        } else {
+            cell.setUpPin(pin: "false")
+        }
         return cell
     }
     
